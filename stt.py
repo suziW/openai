@@ -15,10 +15,10 @@ transcription = client.audio.transcriptions.create(
 print(transcription.text)
 
 transcription = client.audio.transcriptions.create(
-  file=audio_file,
-  model="whisper-1",
-  response_format="verbose_json",
-  timestamp_granularities=["word"]
+    file=audio_file,
+    model="whisper-1",
+    response_format="verbose_json",
+    timestamp_granularities=["word"],
 )
 
 print(transcription)
